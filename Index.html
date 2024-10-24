@@ -1,1 +1,87 @@
-
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Website</title>
+    <style>
+        body {
+            font-family: Open Sans, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #2f4f7f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .donate-form {
+            width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .donate-form input[type="number"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .donate-form input[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #2f4f7f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .upi-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .footer {
+            background-color: #2f4f7f;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Donation Website</h1>
+    </div>
+    
+    <div class="donate-form">
+        <h2>Donate Now</h2>
+        <form>
+            <label for="amount">Donation Amount (₹):</label>
+            <input type="number" id="amount" name="amount" min="50" max="1000000">
+            <br>
+            <input type="submit" value="Donate via UPI">
+        </form>
+        <div class="upi-link">
+            <p>UPI ID: hardiksingh029@okaxis</p>
+            <p>UPI Link: <a href="upi://pay?pa=hardiksingh029@okaxis&pn=HARDIK%20SINGH&aid=uGICAgMD8q7WlIg">upi://pay?pa=hardiksingh029@okaxis&pn=HARDIK%20SINGH&aid=uGICAgMD8q7WlIg</a></p>
+            <img src="qr-code-image.png" alt="QR Code">
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2023 Donation Website</p>
+    </div>
+</body>
+</html>
